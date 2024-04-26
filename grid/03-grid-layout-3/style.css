@@ -85,13 +85,18 @@
 
 .nav {
   background-color: #C50208;
-  display:grid;
   grid-area:2/2/3/3;
+}
+
+.nav ul{
+  display:grid;
+  grid-template: 1fr / repeat(3,1fr);
 }
 
 .nav ul li {
   font-size: 16px;
   text-transform: uppercase;
+  list-style-type: none;
 }
 
 /* Article */
