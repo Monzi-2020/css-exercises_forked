@@ -7,9 +7,9 @@
 .container {
   text-align: center;
   display:grid;
-  width: 100dsh;
-  /* grid-template-rows: 2fr 1fr 3fr 1fr;
-  grid-template-columns: 1fr 4fr; */
+  height: 40vh;
+  grid-template-rows: 2fr 1fr 3fr 1fr;
+  grid-template-columns: 1fr 4fr;
   gap: 4px;
 }
 
@@ -32,6 +32,7 @@
 
 .header .logo{
   justify-self: start;
+  align-self: center;
 }
 
 .menu{
@@ -56,7 +57,7 @@
   background-color: #C50208;
   grid-area: 2/1/4/2;
   display:grid;
-  grid-template: repeat(4, 1fr) / 1fr;
+  grid-template: repeat(4, 1fr) / auto;
   gap: 50px;
 }
 
@@ -103,8 +104,10 @@
 
 .article {
   background-color: #bccbde;
-  display:grid;
   grid-area: 3/2/3/3;
+  display:grid;
+  grid: auto / repeat(auto-fit,minmax(250px,1fr));
+  gap: 15px;
 }
 
 .article p {
@@ -118,6 +121,7 @@
   background-color: #FFFFFF;
   color: black;
   text-align: center;
+  height: 200px;
 }
 
 .card p {
