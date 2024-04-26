@@ -21,6 +21,8 @@
   color: white;
 }
 
+/* Header */
+
 .header {
   background-color: #393f4d;
   grid-area: 1/1/2/3;
@@ -48,10 +50,14 @@
   list-style-type: none;
 }
 
+/* SideBar */
+
 .sidebar {
   background-color: #C50208;
-  display:grid;
   grid-area: 2/1/4/2;
+  display:grid;
+  grid-template: repeat(4, 1fr) / 1fr;
+  gap: 50px;
 }
 
 .sidebar .photo {
@@ -60,6 +66,8 @@
   font-size: 12px;
   font-weight: normal;
   border-radius: 10px;
+  display:grid;
+  align-items: center;
 }
 
 
@@ -68,7 +76,12 @@
   color: black;
   font-size: 16px;
   font-weight: normal;
+  display:grid;
+  align-items: center;
 }
+
+
+/* Nav */
 
 .nav {
   background-color: #C50208;
@@ -80,6 +93,8 @@
   font-size: 16px;
   text-transform: uppercase;
 }
+
+/* Article */
 
 .article {
   background-color: #bccbde;
@@ -110,6 +125,8 @@
   font-size: 18px;
   text-align: center;
 }
+
+/* Footer */
 
 .footer {
   background-color: #393f4d;
